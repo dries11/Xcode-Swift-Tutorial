@@ -36,9 +36,10 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         countryTextField.isHidden = true;
         zipcodeLabel.isHidden = true;
         zipcodeTextBox.isHidden = true;
-        buyNowBtn.isHidden = true;
+        buyNowBtn?.isHidden = true;
         statePicker.isHidden = false;
     }
+    
     @IBAction func buyNowBtnPressed(_ sender: Any) {
     }
     
@@ -62,7 +63,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         countryTextField.isHidden = false;
         zipcodeLabel.isHidden = false;
         zipcodeTextBox.isHidden = false;
-        buyNowBtn.isHidden = false;
+        buyNowBtn?.isHidden = false;
     }
 }
 
