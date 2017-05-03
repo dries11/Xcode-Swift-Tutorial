@@ -17,6 +17,18 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     @IBOutlet weak var zipcodeLabel: UILabel!
     @IBOutlet weak var zipcodeTextBox: UITextField!
     @IBOutlet weak var buyNowBtn: UIButton!
+    @IBOutlet weak var successImage: UIImageView!
+    @IBOutlet weak var pillImage: UIImageView!
+    @IBOutlet weak var appTitle: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var blackLine: UIView!
+    @IBOutlet weak var fullNameLabel: UILabel!
+    @IBOutlet weak var fullNameTextField: UITextField!
+    @IBOutlet weak var streetAddressLabel: UILabel!
+    @IBOutlet weak var streetAddressTextField: UITextField!
+    @IBOutlet weak var cityLabel: UILabel!
+    @IBOutlet weak var cityTextField: UITextField!
+    @IBOutlet weak var stateLabel: UILabel!
     
     let states = ["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Conneticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"];
     
@@ -41,6 +53,24 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     }
     
     @IBAction func buyNowBtnPressed(_ sender: Any) {
+        statePicker.isHidden = true;
+        statePickerBtn.isHidden = true;
+        countryLabel.isHidden = true;
+        countryTextField.isHidden = true;
+        zipcodeLabel.isHidden = true;
+        zipcodeTextBox.isHidden = true;
+        successImage.isHidden = false;
+        pillImage.isHidden = true;
+        appTitle.isHidden = true;
+        priceLabel.isHidden = true;
+        blackLine.isHidden = true;
+        fullNameLabel.isHidden = true;
+        fullNameTextField.isHidden = true;
+        streetAddressLabel.isHidden = true;
+        streetAddressTextField.isHidden = true;
+        cityLabel.isHidden = true;
+        cityTextField.isHidden = true;
+        stateLabel.isHidden = true;
     }
     
     
